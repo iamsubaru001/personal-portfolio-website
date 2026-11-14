@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuj Somani | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 10. Interactive Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">&lt;Anuj /&gt;</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      <nav id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- 9. Dark Mode and Light Mode Toggle -->
+      <button id="themeToggle" class="theme-btn" title="Switch Theme">🌙 Dark</button>
+    </div>
+  </header>
+
+  <!-- 1. Home Section -->
+  <section id="home" class="section hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="welcome-tag">Welcome to my personal portfolio!</p>
+        <h1>Hi, I'm <span class="highlight">Anuj Somani</span></h1>
+        <h2>First-Year B.Tech CSE (AI) Student</h2>
+        <p class="hero-desc">
+          Building web projects, solving DSA problems in Java, and learning something new every single day at Bosscoder School of Technology, Bengaluru.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn primary-btn">About Me</a>
+          <a href="#projects" class="btn secondary-btn">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Simple SVG Student Avatar so it works offline without broken image links -->
+        <div class="avatar-card">
+          <svg viewBox="0 0 200 200" width="210" height="210" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="95" fill="#2563eb" opacity="0.15"/>
+            <circle cx="100" cy="78" r="36" fill="#2563eb"/>
+            <path d="M40 172 C40 132, 160 132, 160 172" fill="#2563eb"/>
+            <text x="100" y="190" font-size="14" text-anchor="middle" fill="#64748b" font-family="sans-serif">Anuj Somani</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. About Me Section -->
+  <section id="about" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p>
+          I am Anuj Jagdish Somani, a 20-year-old first-year engineering undergraduate pursuing B.Tech in Computer Science and Artificial Intelligence at Bosscoder School of Technology (S-VYASA Campus), Bengaluru. Originally from Parli Vaijnath, Maharashtra, I enjoy turning ideas into clean, working websites and software.
+        </p>
+        <p>
+          Right now, my main areas of interest are <strong>Frontend Web Development</strong>, <strong>Java &amp; Data Structures</strong>, and <strong>Cybersecurity basics</strong>. My goal is to become a strong full-stack software engineer and build practical tools that solve real everyday problems.
+        </p>
+        <div class="about-highlights">
+          <div class="mini-box">
+            <h4>Location</h4>
+            <p>Bengaluru, Karnataka</p>
+          </div>
+          <div class="mini-box">
+            <h4>Focus Area</h4>
+            <p>Web Dev &amp; Java DSA</p>
+          </div>
+          <div class="mini-box">
+            <h4>Goal</h4>
+            <p>Full-Stack &amp; AI Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year-badge">2026 – 2030</span>
+          <h3>B.Tech in Computer Science &amp; Artificial Intelligence</h3>
+          <p class="institute">Bosscoder School of Technology (S-VYASA Deemed-to-be University), Bengaluru</p>
+          <p>First-Year Undergraduate (Section B) • Focusing on Web Development, Java Programming, Matrices &amp; Vectors, and Git/GitHub workflows.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year-badge">Higher Secondary</span>
+          <h3>Class 12th (HSC – Science / PCM)</h3>
+          <p class="institute">Maharashtra State Board</p>
+          <p>Completed senior secondary education with Physics, Chemistry, and Mathematics.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year-badge">Secondary</span>
+          <h3>Class 10th (CBSE)</h3>
+          <p class="institute">Central Board of Secondary Education</p>
+          <p>Completed foundational schooling with strong interest in mathematics and computers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Skills Section -->
+  <section id="skills" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>HTML5</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>CSS3 (Flexbox &amp; Grid)</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>JavaScript (DOM &amp; Validation)</span><span>75%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Java &amp; DSA</span><span>80%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Git &amp; GitHub</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Non-Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>Problem Solving</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Teamwork &amp; Git Collaboration</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Communication</span><span>80%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Time Management &amp; Discipline</span><span>88%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="cards-grid">
+        <div class="card project-card">
+          <div class="project-banner blue-banner">Portfolio v1</div>
+          <div class="card-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>Responsive single-page portfolio built with semantic HTML, custom CSS variables, dark/light theme switcher, and JS form validation.</p>
+            <p class="tech-tags"><strong>Tech:</strong> HTML5, CSS3, JavaScript</p>
+            <button class="btn small-btn" onclick="showProjectDetails('Personal Portfolio Website', 'Built as an individual Web Dev Lab project. Includes sticky navigation, smooth scroll, responsive grid/flexbox layouts, theme switcher, and client-side contact form validation.')">View Details</button>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-banner green-banner">Git Team Repo</div>
+          <div class="card-body">
+            <h3>Team Student Profile Hub</h3>
+            <p>Collaborative multi-page website created using Git feature branches, Pull Requests, and code reviews on GitHub.</p>
+            <p class="tech-tags"><strong>Tech:</strong> Git, GitHub, HTML5, CSS3</p>
+            <button class="btn small-btn" onclick="showProjectDetails('Team Student Profile Hub', 'Worked in a 4-member team using separate feature branches (feature/profile, feature/skills, feature/contact) and merged changes via Pull Requests into main.')">View Details</button>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-banner purple-banner">Web Lab P1–P13</div>
+          <div class="card-body">
+            <h3>Web Development Lab Suite</h3>
+            <p>Collection of 13 progressive lab exercises covering CLI navigation, semantic HTML, CSS design tokens, Flexbox, and CSS Grid.</p>
+            <p class="tech-tags"><strong>Tech:</strong> Bash, HTML5, CSS Grid, Flexbox</p>
+            <button class="btn small-btn" onclick="showProjectDetails('Web Development Lab Suite', 'Completed all 13 laboratory programs from Module 1 to Module 3, including a newspaper three-column grid layout and responsive portfolio grids.')">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Hobbies and Interests Section -->
+  <section id="hobbies" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Hobbies &amp; Interests</h2>
+      <div class="cards-grid">
+        <div class="card hobby-card">
+          <div class="hobby-icon">📚</div>
+          <h3>Reading</h3>
+          <p>Reading web novels and mystery fiction like <em>Lord of Mysteries</em> and Agatha Christie classics.</p>
+        </div>
+        <div class="card hobby-card">
+          <div class="hobby-icon">💻</div>
+          <h3>Coding &amp; Open Source</h3>
+          <p>Practicing Java DSA problems and exploring open-source repositories.</p>
+        </div>
+        <div class="card hobby-card">
+          <div class="hobby-icon">🎮</div>
+          <h3>Anime &amp; Strategy Games</h3>
+          <p>Watching sports anime and playing sandbox games with friends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <div class="cards-grid">
+        <div class="card achievement-card">
+          <span class="year-badge">2026</span>
+          <h3>Hacktoberfest Participant</h3>
+          <p>Contributed to open-source repositories and practiced Git/GitHub pull request workflows during Hacktoberfest 2026.</p>
+        </div>
+        <div class="card achievement-card">
+          <span class="year-badge">2026</span>
+          <h3>Bosscoder Selection &amp; Admission</h3>
+          <p>Cleared technical admission assessments and joined the B.Tech CSE (AI) batch at Bosscoder School of Technology.</p>
+        </div>
+        <div class="card achievement-card">
+          <span class="year-badge">2026</span>
+          <h3>Web Development Lab Completion</h3>
+          <p>Successfully implemented all 13 lab modules (P1–P13) and team Git collaboration tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Contact Section -->
+  <section id="contact" class="section alt-bg">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2 class="section-title" style="text-align:left;">Contact Me</h2>
+        <p>Feel free to reach out for project collaborations, study groups, or web development discussions.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> anuj.somani@example.com</li>
+          <li><strong>Location:</strong> Bengaluru, Karnataka, India</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/" target="_blank">github.com/anujsomani</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/" target="_blank">linkedin.com/in/anujsomani</a></li>
+        </ul>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <h3>Send a Message</h3>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <small class="error-msg" id="nameError"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <small class="error-msg" id="emailError"></small>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+          <small class="error-msg" id="messageError"></small>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+        <p id="formSuccess" class="success-msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Anuj Jagdish Somani | Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <!-- Simple Modal for Project Details -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDesc">Project description goes here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
